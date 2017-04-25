@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.recyclerview.R;
+
+
 /**
  *
  * Created by 安维 on 2017/4/25.
@@ -17,6 +20,7 @@ import android.widget.Toast;
 public class TitleLayout extends LinearLayout {
     public TitleLayout(Context context, AttributeSet attrs){
         super(context,attrs);
+
         LayoutInflater.from(context).inflate(R.layout.title,this);
         Button titleBack=(Button) findViewById(R.id.title_back);
         Button titleEdit=(Button)findViewById(R.id.title_edit);
@@ -34,4 +38,4 @@ public class TitleLayout extends LinearLayout {
         });
     }
     }
-}
+
